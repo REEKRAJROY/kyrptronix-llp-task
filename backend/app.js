@@ -25,7 +25,7 @@ app.use(userRoutes);
 //   })
 
 async function connectDB() {
-    await mongoose.connect("mongodb://localhost:27017",{
+    await mongoose.connect("mongodb+srv://reekrajroy:NxW9+sj3cdQkqg#@cluster0.6shzwgo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",{
         dbName: "UsersDB"
     })
 }
